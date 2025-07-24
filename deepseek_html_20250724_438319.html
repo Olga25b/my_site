@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетитор по химии онлайн | Подготовка к ОГЭ и ЕГЭ</title>
+    <meta name="description" content="Профессиональный репетитор по химии. Онлайн-занятия для 8–11 классов. Подготовка к ОГЭ и ЕГЭ на интерактивной доске ChatterN. Индивидуальный подход.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+        .cta-button:hover {
+            background-color: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        section {
+            padding: 50px 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .service-card {
+            flex: 1 1 300px;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card h3 {
+            color: #2575fc;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-card ul {
+            list-style-position: inside;
+            margin-bottom: 15px;
+        }
+        .how-it-works {
+            background-color: #f1f5f9;
+        }
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .step {
+            flex: 1 1 250px;
+            text-align: center;
+            padding: 20px;
+        }
+        .step-icon {
+            font-size: 2.5rem;
+            color: #6a11cb;
+            margin-bottom: 15px;
+        }
+        .reviews {
+            background-color: white;
+        }
+        .review-card {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #6a11cb;
+        }
+        .review-author {
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: right;
+            color: #6a11cb;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group textarea, 
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .price {
+            font-weight: bold;
+            color: #2ecc71;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Дистанционные уроки химии для школьников 8–11 классов</h1>
+            <p class="subtitle">📚 Подготовка к ОГЭ и ЕГЭ на онлайн-доске ChatterN</p>
+            <a href="#contact" class="cta-button">🚀 Записаться на пробный урок!</a>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <h2>Мои услуги</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Индивидуальные занятия</h3>
+                    <ul>
+                        <li>Разбор сложных тем</li>
+                        <li>Решение задач и тестов</li>
+                        <li>Подготовка к контрольным, ОГЭ, ЕГЭ</li>
+                    </ul>
+                    <p class="price">от 1500 руб./90 мин</p>
+                </div>
+                <div class="service-card">
+                    <h3>Групповые курсы</h3>
+                    <ul>
+                        <li>Мини-группы (3–5 человек)</li>
+                        <li>Систематизация знаний</li>
+                        <li>Разбор типовых ошибок на экзаменах</li>
+                    </ul>
+                    <p class="price">от 800 руб./90 мин</p>
+                </div>
+                <div class="service-card">
+                    <h3>Подготовка к экзаменам</h3>
+                    <ul>
+                        <li>ОГЭ (9 класс) – теория + практика</li>
+                        <li>ЕГЭ (11 класс) – углублённый разбор заданий</li>
+                        <li>Экспресс-курсы перед экзаменами</li>
+                    </ul>
+                    <p class="price">от 1200 руб./90 мин</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Как проходят занятия?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">💻</div>
+                    <h3>Формат</h3>
+                    <p>Онлайн на интерактивной доске ChatterN (аналог Miro или Idroo) с возможностью рисовать формулы и решать задачи вместе</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">✍️</div>
+                    <h3>Что нужно</h3>
+                    <p>Графический планшет + стилус или компьютер/ноутбук с мышью или сенсорный планшет</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🎯</div>
+                    <h3>Преимущества</h3>
+                    <p>Наглядные объяснения, интерактивные тесты, записи занятий остаются у ученика</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2>Отзывы учеников</h2>
+            <div class="review-card">
+                <p>"Благодаря урокам сдала ЕГЭ по химии на 90 баллов! Всё объясняется понятно и доступно, особенно сложные темы по органической химии."</p>
+                <p class="review-author">Алина, 11 класс</p>
+            </div>
+            <div class="review-card">
+                <p>"Отличный преподаватель! За несколько месяцев подготовки к ОГЭ подтянул знания с тройки до твердой четверки. Очень нравится интерактивная доска - всё видно и понятно."</p>
+                <p class="review-author">Максим, 9 класс</p>
+            </div>
+            <div class="review-card">
+                <p>"Занимаемся второй год, химия стала любимым предметом. Учитель умеет заинтересовать и объясняет сложные темы на простых примерах. Рекомендую!"</p>
+                <p class="review-author">София, 10 класс</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Запись на занятия</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон или email:</label>
+                        <input type="text" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Класс:</label>
+                        <select id="class">
+                            <option value="8">8 класс</option>
+                            <option value="9">9 класс (ОГЭ)</option>
+                            <option value="10">10 класс</option>
+                            <option value="11">11 класс (ЕГЭ)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="format">Формат занятий:</label>
+                        <select id="format">
+                            <option value="individual">Индивидуальные</option>
+                            <option value="group">Групповые</option>
+                            <option value="notsure">Еще не определился(ась)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваши пожелания:</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Полезные материалы</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Бесплатные материалы</h3>
+                    <ul>
+                        <li>Как решать задачи на молярную массу?</li>
+                        <li>Топ-5 ошибок на ОГЭ по химии</li>
+                        <li>Алгоритмы решения задач ЕГЭ</li>
+                        <li>Формулы и таблицы для запоминания</li>
+                    </ul>
+                    <p>Скачивайте и используйте при подготовке!</p>
+                </div>
+                <div class="service-card">
+                    <h3>Частые вопросы</h3>
+                    <p><strong>Как часто нужно заниматься?</strong><br>
+                    Для подготовки к экзаменам рекомендую 2 раза в неделю, для улучшения успеваемости - 1 раз.</p>
+                    <p><strong>Нужны ли учебники?</strong><br>
+                    Все материалы предоставляю я в электронном виде, но учебники могут быть полезны для дополнительной практики.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Контакты</h3>
+            <div class="contact-info">
+                <a href="tel:+79991234567">📞 Телефон: +7 (999) 123-45-67</a>
+                <a href="mailto:chemistry.tutor@example.com">📧 Email: chemistry.tutor@example.com</a>
+                <a href="https://t.me/chemistry_tutor">✏️ Telegram: @chemistry_tutor</a>
+                <a href="https://wa.me/79991234567">WhatsApp: +7 (999) 123-45-67</a>
+            </div>
+            <p>© 2023 Репетитор по химии онлайн. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
